@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tela de Atividades do Educati</title>
+  <style>
+    /* Estilos CSS para a tela de atividades */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .atividade {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+
+    .descricao {
+      color: #777;
+      margin-bottom: 10px;
+    }
+
+    .botao-concluir {
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+
+    .botao-anexar {
+      background-color: #2196f3;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+
+    .input-anexo {
+      display: none;
+    }
+
+    .arquivo-anexado {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tela de Atividades do Educati</h1>
+
+  <div class="atividade">
+    <h2>Título da Atividade</h2>
+    <p class="descricao">Descrição da atividade aqui...</p>
+    <button class="botao-concluir">Enviar Atividade</button>
+    <label for="anexo1" class="botao-anexar">Anexar</label>
+    <input type="file" id="anexo1" class="input-anexo">
+    <div id="arquivo-anexado1" class="arquivo-anexado"></div>
+  </div>
+
+  <!-- Adicione mais atividades aqui, se necessário -->
+
+  <script>
+    // JavaScript para lidar com eventos
+    var botoesConcluir = document.getElementsByClassName('botao-concluir');
+
+    for (var i = 0; i < botoesConcluir.length; i++) {
+      botoesConcluir[i].addEventListener('click', function() {
+        this.innerText = 'Concluída';
+      });
+    }
+
+    var botoesAnexar = document.getElementsByClassName('botao-anexar');
+
+    for (var j = 0; j < botoesAnexar.length; j++) {
+      botoesAnexar[j].addEventListener('click', function() {
+        var inputAnexo = this.nextElementSibling;
+        inputAnexo.addEventListener('change', function() {
+          var arquivoAnexado = this.files[0].name;
+          var divArquivoAnexado = this.parentElement.querySelector('.arquivo-anexado');
+          

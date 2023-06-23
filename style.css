@@ -1,0 +1,7 @@
+body {
+    background-image: url(/img1/Slide2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* 300px; 500px */
+    background-size: 100% 100%;
+}

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Olá Professor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    img {
+      width: 200px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Olá Professor</h1>
+  </header>
+  <section>
+    <img src="/img1/prof.jpg" alt="Imagem do Professor">
+    <div class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+        <a href="#">Aulas</a>
+        <a href="#">Materiais</a>
+        <a href="#">Contato</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dropdown do Professor</title>
+  <style>
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h1> Qual a sua disciplina</h1>
+
+  <div class="dropdown">
+    <button class="dropbtn">Disciplinas</button>
+    <div class="dropdown-content">
+      <a href="calendario.html?materia=Matemática"><b>Matemática</a>
+      <a href="calendario.html?materia=Língua Portuguesa">Língua Portuguesa</a>
+      <a href="calendario.html?materia=História">História</a>
+      <a href="calendario.html?materia=Geografia">Geografia</a>
+      <a href="calendario.html?materia=Inglês">Inglês</a>
+      <a href="calendario.html?materia=Química">Química</a>
+      <a href="calendario.html?materia=Educação Física">Educação Física</a>
+      <a href="calendario.html?materia=Física">Física</a></b>
+    </div>
+  </div>
+
+  <script>
+    // Nenhuma função é necessária nesta página
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calendário das Atividades</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      text-align: center;
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      <!DOCTYPE html>
+<html>
+<head>
+   <title> Calendário escolar </title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      text-align: center;
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h1>Calendário escolar</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Domingo</th>
+        <th>Segunda</th>
+        <th>Terça</th>
+        <th>Quarta</th>
+        <th>Quinta</th>
+        <th>Sexta</th>
+        <th>Sábado</th>
+      </tr>
+    </thead>
+    <tbody id="calendar-body">
+      <!-- Os dias do calendário serão adicionados dinamicamente aqui -->
+    </tbody>
+  </table>
+
+  <div id="activity-dropdown" class="dropdown">
+    <button class="dropbtn">Atividade</button>
+    <div class="dropdown-content">
+      <a href="#">Detalhes da Atividade</a>
+      <a href="#">Editar Atividade</a>
+      <a href="#">Excluir Atividade</a>
+    </div>
+  </div>
+
+  <script>
+    function createCalendar() {
+      var calendarBody = document.getElementById('calendar-body');
+      var date = new Date();
+      var year = date.getFullYear();
+      var month = date.getMonth();
+      var firstDay = new Date(year, month, 1);
+      var lastDay = new Date(year, month + 1, 0);
+      var daysInMonth = lastDay.getDate();
+      var startingDay = firstDay.getDay();
+
+      var dateCount = 1;
+      var table = document.createElement('table');
+
+      for (var i = 0; i < 6; i++) {
+        var row = document.createElement('tr');
+
+        for (var j = 0; j < 7; j++) {
+          if (i === 0 && j < startingDay) {
+            var cell = document.createElement('td');
+            row.appendChild(cell);
+          } else if (dateCount > daysInMonth) {
+            break;
+          } else {
+            var cell = document.createElement('td');
+            var dayButton = document.createElement('button');
+            dayButton.innerText = dateCount;
+            dayButton.addEventListener('click', showActivityDropdown);
+            cell.appendChild(dayButton);
+            <!DOCTYPE html>
