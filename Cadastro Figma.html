@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos Técnicos - Educati</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="index.html">
+        <link rel="stylesheet" href="index.html">
+        <link rel="stylesheet" href="mobile-navbar.js">
+        <link rel="stylesheet" href="style.css">
+
+  <title>Cadastro - Educati</title>
+  <style>
+
+
+   body {
+      font-family: Arial, sans-serif;
+      background-color:rgb(255, 255, 255);
+    }
+
+    .container {
+      padding: 20px;
+      background-color: #f3f3f3;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+       
+      background-color:rgb(184, 181, 181);
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #000000;
+      border-radius: 10px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #000000;
+      color: rgb(184, 19, 19);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="/">EducaTI</a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Projetos</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <h2><b>Cadastrar</b></h2>
+    <form action="processar_cadastro.php" method="post">
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+      </div>
+      <div class="form-group">
+      
+      <div class="form-group">
+        <label for="genero">Gênero:</label>
+        
+        <select id="genero" name="genero" required>
+          
+         <option value="">Selecione</option>
+          
+          <option value="masculino">Masculino</option>
+          
+          <option value="feminino">Feminino</option>
+          
+          <option value="outro">Outro</option>
+        
+       </select>
+      
+    </div>
+     <div class="form-group">
+        
+       <label for="curso">Curso:</label>
+        
+       
+<select id="option" name="option" required>
+          
+         <option value="">Selecione</option>
+              
+          <option value="option">Curso 1</option>
+              
+          <option value="option">Curso 2</option>
+              
+          <option value="option">Curso 3</option>
+            
+      </select>
+  </div>
+  <script src="mobile-navbar.js"></script>
+</body>
+</html>
